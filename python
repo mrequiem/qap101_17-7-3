@@ -1,0 +1,7 @@
+money = int(input('Укажите, какую сумму вы намерены положить на счет'))
+tkb_percent     = int((money)*0.056)
+skb_percent     = int((money)*0.059)
+vtb_percent     = int((money)*0.0428)
+sber_percent    = int((money)*0.04)
+bank_list = [(tkb_percent),(skb_percent), (vtb_percent), (sber_percent)]
+print('\nЗа год вы накопите:\n\n в ТКБ\t\t', (tkb_percent), '\n в СКБ\t\t', (skb_percent), '\n в ВТБ\t\t', (vtb_percent), '\n в СБЕРе\t', (sber_percent), '\n\nМаксимальная сумма, которую вы можете заработать — ', max(bank_list))
